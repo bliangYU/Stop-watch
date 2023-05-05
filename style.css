@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'pixel';
+  src: url('pixel.regular.ttf');
+}
+
+body {
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+height:100%;
+transition: background-color 1000ms linear;
+}
+
+.wrapper {
+width: auto;
+margin: 30px auto;
+text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 2.6em;
+  text-transform: uppercase;
+}
+
+#seconds, #tens, #minutes{
+  font-size:2em;
+}
+
+.wrapper button{
+border-radius: 5px;
+border: solid 1px $white; /* not working */
+text-decoration:none;
+cursor:pointer;
+font-size:1.2em;
+padding:18px 10px;
+width:180px;
+margin: 10px;
+ outline: none;
+  &:hover{
+	@include transition;
+	color:$base-color;
+	}
+}
+
+/* table */
+table {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em;
+}
+
+.table-bordered {
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+
+.table-bordered th, .table-bordered td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+/* Dark Mode */ 
+.dark-mode {
+  color: white;
+  
+}
+
+span {
+  font-family: 'pixel';
+}
+
+.custom-button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.custom-button img {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+#toggle-dark-button {
+  float: right;
+}
+
+
